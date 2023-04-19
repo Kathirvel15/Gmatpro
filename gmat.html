@@ -557,8 +557,23 @@
             </form>
         </div>
     </div>
+    <!-- footer section -->
+    <footer>
+        <div style="background: #E3D685;
+       padding: 1%;
+       font-family: poppins;
+       text-align: center;
+       color: #000000;">
+            <p id="footer-content"></p>
+        </div>
+    </footer>
     <!-- Function Part -->
     <script>
+        //footer content
+        function footerContent() {
+            document.getElementById("footer-content").innerText = `©  ${new Date().getFullYear()} CareerLabs Technologies Pvt Ltd`;
+        }
+        footerContent();
         var mediaquery = window.matchMedia("(max-width:767px)")
         console.log(mediaquery)
         mediaquery.addEventListener("change", mediachange)
