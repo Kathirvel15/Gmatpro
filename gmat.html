@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap"
         rel="stylesheet">
     <!-- CSS styleSheet -->
-    <link rel="styleSheet" href="./gmat.css" />
+    <link rel="styleSheet" href="../css/GmatPro.css" />
 </head>
 
 <body>
@@ -47,50 +47,51 @@
                             </ul>
                         </div>
                         <div class="gmat-section-1st-inner-col-2">
-                            <img src="Gmatpro-Images/Banner-Image.png" width="100%" alt="GMAT-Image" />
+                            <img src="Assets/Gmatpro-Images/Banner-Image.png" width="100%" alt="GMAT-Image" />
                         </div>
                     </div>
                 </div>
                 <div class="gmat-section-1st-col-2">
                     <div class="gmat-section-1-col-2pad">
-                        <form role="form" onsubmit="return false">
+                        <form role="form" onsubmit="return false" name="FORM 0">
                             <div class="gmat-form-margin-top">
                                 <input type="text" placeholder="Name:" id="name" class="gmat-name"
-                                    onkeydown="firstnamevalidation()">
-                                <div class="gmat-form-error-msg">
-                                    <p class="gmat-1-firstname"></p>
+                                    onkeyup="firstnamevalidation(event)">
+                                <div class="gmat-form-error-msg gmat-name-gmat-form-error-msg">
+                                    <p class="gmat-1-firstname gmat-name-gmat-1-firstname">
+                                    </p>
                                 </div>
                             </div>
                             <div class="gmat-form-margin-top">
                                 <input type="email" placeholder="Email-ID:" id="email" class="gmat-email"
-                                    onkeyup="emailvalidation()" onkeydown="spacevalid()">
-                                <div class="gmat-form-error-msg1">
-                                    <p class="gmat-1-email"></p>
+                                    onkeyup="emailvalidation(event)" onkeydown="spacevalid(event)">
+                                <div class="gmat-form-error-msg1 gmat-email-gmat-form-error-msg1 ">
+                                    <p class="gmat-1-email gmat-email-gmat-1-email "></p>
                                 </div>
                             </div>
                             <div class="gmat-form-margin-top">
                                 <input type="tel" placeholder="Phone Number:" maxlength="10" id="phone"
-                                    class="gmat-phone" onkeyup="phonevalidation()" onkeydown="spacevalid()">
-                                <div class=" gmat-form-error-msg2">
-                                    <p class="gmat-1-phone"></p>
+                                    class="gmat-phone" onkeyup="phonevalidation(event)" onkeydown="spacevalid(event)">
+                                <div class="gmat-form-error-msg2 gmat-phone-gmat-form-error-msg2">
+                                    <p class="gmat-1-phone gmat-phone-gmat-1-phone"></p>
                                 </div>
                             </div>
                             <div class="gmat-form-margin-top">
                                 <input type="text" placeholder="City:" id="city" class="gmat-city"
-                                    onkeydown="cityvalidation()">
-                                <div class=" gmat-form-error-msg3">
-                                    <p class="gmat-1-city"></p>
+                                    onkeyup="cityvalidation(event)">
+                                <div class="gmat-form-error-msg3 gmat-city-gmat-form-error-msg3">
+                                    <p class="gmat-1-city gmat-city-gmat-1-city"></p>
                                 </div>
                             </div>
                             <div class="gmat-form-submit-flex">
-                                <button type="submit" class="btn-1st-inner-part" onclick="checkvalid()">Start My
+                                <button type="submit" id="gmat-name-btn" class="gmat-name"
+                                    onclick="checkvalid(event)">Start My
                                     Prep</button>
-                                <p class="gmat-btn-error">Please Fill Out The Form</p>
+                                <p class="gmat-name-gmat-btn-error">Please Fill Out The Form</p>
                             </div>
                             <div style="display: none;">
-                                <input type="text" class="gmat-website" id="website" name="
-                        GMATWebsite">
-                                <input type="text" id="firstname">
+                                <input type="hidden" id="redirectUrl" value="">
+                                <!-- <input type="text" id="firstname">
                                 <input type="text" id="lastname">
                                 <input type="text" id="source">
                                 <input type="text" id="medium">
@@ -98,7 +99,7 @@
                                 <input type="text" id="term">
                                 <input type="text" id="device">
                                 <input type="text" id="gclId">
-                                <input type="text" id="gct">
+                                <input type="text" id="gct"> -->
                             </div>
                         </form>
                     </div>
@@ -239,10 +240,10 @@
         </div>
         <div class="gmat-prep-pro-sec-3-cols">
             <div class="sec-3-col sec-3-col-1 gmat-slide-3rd-mobile-carousel">
-                <img src="Gmatpro-Images/Saikiran Dudyala-img.png" alt="Saikiran-img" loading="lazy" />
+                <img src="Assets/Gmatpro-Images/Saikiran Dudyala-img.png" alt="Saikiran-img" loading="lazy" />
             </div>
             <div class="sec-3-col sec-3-col-2 gmat-slide-3rd-mobile-carousel">
-                <img src="Gmatpro-Images/Mohammed Junaid-img.png" alt="Mohammed-img" loading="lazy" />
+                <img src="Assets/Gmatpro-Images/Mohammed Junaid-img.png" alt="Mohammed-img" loading="lazy" />
             </div>
             <div class="gmat-section-3rd-dot">
                 <span class="gmat-3-dot gmat-5th-active"
@@ -265,8 +266,8 @@
             <div class="gmat-prep-pro-sec-4-cols gmat-slide-4th-mobile-carousel slide4th-1">
                 <div class="student-col">
                     <div class="img-col">
-                        <img src="Gmatpro-Images/Shubhashish P-img.png" alt="Shubhashish-img" loading="lazy" width="150"
-                            height="150" />
+                        <img src="Assets/Gmatpro-Images/Shubhashish P-img.png" alt="Shubhashish-img" loading="lazy"
+                            width="150" height="150" />
                     </div>
                     <div class="name-col">
                         <h1>Shubhashish</h1>
@@ -275,18 +276,20 @@
                 </div>
                 <div class="univer-score-col">
                     <div class="univercity-col">
-                        <img src="Gmatpro-Images/univercity-img.png" alt="univercity-img" loading="lazy" width="200" />
+                        <img src="Assets/Gmatpro-Images/univercity-img.png" alt="univercity-img" loading="lazy"
+                            width="200" />
                     </div>
                     <div class="medal-col">
-                        <img src="Gmatpro-Images/gmat-score-img.png" alt="gmat-score-img" loading="lazy" width="150" />
+                        <img src="Assets/Gmatpro-Images/gmat-score-img.png" alt="gmat-score-img" loading="lazy"
+                            width="150" />
                     </div>
                 </div>
             </div>
             <div class="gmat-prep-pro-sec-4-cols gmat-slide-4th-mobile-carousel slide4th-2">
                 <div class="student-col">
                     <div class="img-col">
-                        <img src="Gmatpro-Images/Pranjal S-img.png" alt="Shubhashish-img" loading="lazy" width="150"
-                            height="150" />
+                        <img src="Assets/Gmatpro-Images/Pranjal S-img.png" alt="Shubhashish-img" loading="lazy"
+                            width="150" height="150" />
                     </div>
                     <div class="name-col">
                         <h1>Pranjal</h1>
@@ -295,10 +298,12 @@
                 </div>
                 <div class="univer-score-col">
                     <div class="univercity-col">
-                        <img src="Gmatpro-Images/univercity-img.png" alt="univercity-img" loading="lazy" width="200" />
+                        <img src="Assets/Gmatpro-Images/univercity-img.png" alt="univercity-img" loading="lazy"
+                            width="200" />
                     </div>
                     <div class="medal-col">
-                        <img src="Gmatpro-Images/gmat-score-img.png" alt="gmat-score-img" loading="lazy" width="150" />
+                        <img src="Assets/Gmatpro-Images/gmat-score-img.png" alt="gmat-score-img" loading="lazy"
+                            width="150" />
                     </div>
                 </div>
             </div>
@@ -317,22 +322,21 @@
         <div class="gmat-section-2-head">Why Choose <b>GMAT Preparation</b> Services, By <b>CareerLabs?</b></div>
         <div class="gmat-section-2-split">
             <div class="gmat-section-2-col-1">
-                <img src="Gmatpro-Images/Vector-left.png" alt="GMAT-Image" width="50%" loading="lazy" />
-                <img src="
-                Gmatpro-Images/Vector-left.png" alt="GMAT-Image" width="50%" loading="lazy" />
-                <img src="Gmatpro-Images/Vector-left.png" alt="GMAT-Image" width="50%" loading="lazy" />
-                <img src="Gmatpro-Images/Vector-left.png" alt="GMAT-Image" width="50%" loading="lazy" />
-                <img src="Gmatpro-Images/Vector-left.png" alt="GMAT-Image" width="50%" loading="lazy" />
-                <img src="Gmatpro-Images/Vector-left.png" alt="GMAT-Image" width="50%" loading="lazy" />
-                <img src="Gmatpro-Images/Vector-left.png" alt="GMAT-Image" width="50%" loading="lazy" />
-                <img src="Gmatpro-Images/Vector-left.png" alt="GMAT-Image" width="50%" loading="lazy" />
-                <img src="Gmatpro-Images/Vector-left.png" alt="GMAT-Image" width="50%" loading="lazy" />
+                <img src="Assets/Gmatpro-Images/Vector-left.png" alt="GMAT-Image" width="50%" loading="lazy" />
+                <img src="Assets/Gmatpro-Images/Vector-left.png" alt="GMAT-Image" width="50%" loading="lazy" />
+                <img src="Assets/Gmatpro-Images/Vector-left.png" alt="GMAT-Image" width="50%" loading="lazy" />
+                <img src="Assets/Gmatpro-Images/Vector-left.png" alt="GMAT-Image" width="50%" loading="lazy" />
+                <img src="Assets/Gmatpro-Images/Vector-left.png" alt="GMAT-Image" width="50%" loading="lazy" />
+                <img src="Assets/Gmatpro-Images/Vector-left.png" alt="GMAT-Image" width="50%" loading="lazy" />
+                <img src="Assets/Gmatpro-Images/Vector-left.png" alt="GMAT-Image" width="50%" loading="lazy" />
+                <img src="Assets/Gmatpro-Images/Vector-left.png" alt="GMAT-Image" width="50%" loading="lazy" />
+                <img src="Assets/Gmatpro-Images/Vector-left.png" alt="GMAT-Image" width="50%" loading="lazy" />
             </div>
             <div class="gmat-section-2-col-2">
                 <div class="gmat-pro-joshi">
                     <div class="gmat-pro-joshi-inner-part">
                         <div class="gmat-pro-joshi-image">
-                            <img src="Gmatpro-Images/PriyanshJoshi.png" alt="Image" width="80" height="80" />
+                            <img src="Assets/Gmatpro-Images/PriyanshJoshi.png" alt="Image" width="80" height="80" />
                             <div class="gmat-pro-flex">
                                 <h2>Priyansh Joshi</h2>
                                 <p>8 Months Ago</p>
@@ -363,7 +367,7 @@
                 <div class="gmat-pro-joshi" style="margin-top: 3em;">
                     <div class="gmat-pro-joshi-inner-part">
                         <div class="gmat-pro-joshi-image">
-                            <img src="Gmatpro-Images/AbhishekAsija.png" alt="Image" width="80" height="80" />
+                            <img src="Assets/Gmatpro-Images/AbhishekAsija.png" alt="Image" width="80" height="80" />
                             <div class="gmat-pro-flex">
                                 <h2>Abhishek Asija</h2>
                                 <p>11 Months Ago</p>
@@ -483,15 +487,15 @@
                 </div>
             </div>
             <div class="gmat-section-2-col-3">
-                <img src="Gmatpro-Images/VectorRight.png" alt="GMAT-Image" width="50%" loading="lazy" />
-                <img src="Gmatpro-Images/VectorRight.png" alt="GMAT-Image" width="50%" loading="lazy" />
-                <img src="Gmatpro-Images/VectorRight.png" alt="GMAT-Image" width="50%" loading="lazy" />
-                <img src="Gmatpro-Images/VectorRight.png" alt="GMAT-Image" width="50%" loading="lazy" />
-                <img src="Gmatpro-Images/VectorRight.png" alt="GMAT-Image" width="50%" loading="lazy" />
-                <img src="Gmatpro-Images/VectorRight.png" alt="GMAT-Image" width="50%" loading="lazy" />
-                <img src="Gmatpro-Images/VectorRight.png" alt="GMAT-Image" width="50%" loading="lazy" />
-                <img src="Gmatpro-Images/VectorRight.png" alt="GMAT-Image" width="50%" loading="lazy" />
-                <img src="Gmatpro-Images/VectorRight.png" alt="GMAT-Image" width="50%" loading="lazy" />
+                <img src="Assets/Gmatpro-Images/VectorRight.png" alt="GMAT-Image" width="50%" loading="lazy" />
+                <img src="Assets/Gmatpro-Images/VectorRight.png" alt="GMAT-Image" width="50%" loading="lazy" />
+                <img src="Assets/Gmatpro-Images/VectorRight.png" alt="GMAT-Image" width="50%" loading="lazy" />
+                <img src="Assets/Gmatpro-Images/VectorRight.png" alt="GMAT-Image" width="50%" loading="lazy" />
+                <img src="Assets/Gmatpro-Images/VectorRight.png" alt="GMAT-Image" width="50%" loading="lazy" />
+                <img src="Assets/Gmatpro-Images/VectorRight.png" alt="GMAT-Image" width="50%" loading="lazy" />
+                <img src="Assets/Gmatpro-Images/VectorRight.png" alt="GMAT-Image" width="50%" loading="lazy" />
+                <img src="Assets/Gmatpro-Images/VectorRight.png" alt="GMAT-Image" width="50%" loading="lazy" />
+                <img src="Assets/Gmatpro-Images/VectorRight.png" alt="GMAT-Image" width="50%" loading="lazy" />
             </div>
         </div>
     </div>
@@ -502,46 +506,48 @@
             <p>Fill The Form Below & Discover More About Our GMAT Preparation Methods</p>
         </div>
         <div class="gmat-section-6-form">
-            <form role="form" onsubmit="return false">
+            <form role="form" onsubmit="return false; gtag_report_conversion()" name="FORM 1">
                 <div class="gmat-section-6-split-form">
                     <div class="gmat-section-6-form-col">
                         <div class="gmat-form-margin-top">
                             <input type="text" placeholder="Name:" id="name2" class="gmat-name1"
-                                onkeyup="firstnamevalidation1()">
-                            <div class="gmat-formlast-error-msg">
-                                <p class="gmat-1last-firstname"></p>
+                                onkeyup="firstnamevalidation(event)">
+                            <div class="gmat-formlast-error-msg gmat-name1-gmat-form-error-msg ">
+                                <p class="gmat-1last-firstname gmat-name1-gmat-1-firstname ">
+                                </p>
                             </div>
                         </div>
                         <div class="gmat-form-margin-top">
                             <input type="email" placeholder="Email-ID:" id="email2" class="gmat-email1"
-                                onkeyup="emailvalidation1()">
-                            <div class="gmat-formlast-error-msg1">
-                                <p class="gmat-1last-email"></p>
+                                onkeyup="emailvalidation(event)" onkeydown="spacevalid(event)">
+                            <div class="gmat-formlast-error-msg1 gmat-email1-gmat-form-error-msg1">
+                                <p class="gmat-1last-email gmat-email1-gmat-1-email"></p>
                             </div>
                         </div>
                     </div>
                     <div class="gmat-section-6-form-col">
                         <div class="gmat-form-margin-top">
                             <input type="tel" placeholder="Phone Number:" id="phone2" maxlength="10" class="gmat-phone1"
-                                onkeyup="phonevalidation1()">
-                            <div class="gmat-formlast-error-msg2">
-                                <p class="gmat-1last-phone"></p>
+                                onkeyup="phonevalidation(event)" onkeydown="spacevalid(event)">
+                            <div class="gmat-formlast-error-msg2 gmat-phone1-gmat-form-error-msg2">
+                                <p class="gmat-1last-phone gmat-phone1-gmat-1-phone"></p>
                             </div>
                         </div>
                         <div class="gmat-form-margin-top">
                             <input type="text" placeholder="City:" id="city2" class="gmat-city1"
-                                onkeyup="cityvalidation1()">
-                            <div class="gmat-formlast-error-msg3">
-                                <p class="gmat-1last-city"></p>
+                                onkeyup="cityvalidation(event)">
+                            <div class="gmat-formlast-error-msg3 gmat-city1-gmat-form-error-msg3">
+                                <p class="gmat-1last-city gmat-city1-gmat-1-city"></p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="gmat-form-submit-flex">
-                    <button type="submit" class="last-btn-6" onclick="checkvalid1()">Start Preparing Today!</button>
-                    <p class="gmat-btnlast-error">Please Fill Out The Form</p>
+                    <button type="submit" id="gmat-name1-btn" class="gmat-name1" onclick="checkvalid(event)">Start
+                        Preparing Today!</button>
+                    <p class="gmat-name1-gmat-btn-error">Please Fill Out The Form</p>
                 </div>
-                <div style="display: none;">
+                <!-- <div style="display: none;">
                     <input type="text" class="gmat-website" id="website2" name="
             GMATWebsite">
                     <input type="text" id="firstname2">
@@ -553,7 +559,7 @@
                     <input type="text" id="device2">
                     <input type="text" id="gclId2">
                     <input type="text" id="gct2">
-                </div>
+                </div> -->
             </form>
         </div>
     </div>
@@ -563,10 +569,11 @@
        padding: 1%;
        font-family: poppins;
        text-align: center;
-       color: #000000;">
+       color: #000000;font-weight: 600;">
             <p id="footer-content"></p>
         </div>
     </footer>
+
     <!-- Function Part -->
     <script>
         //footer content
@@ -574,6 +581,8 @@
             document.getElementById("footer-content").innerText = `©  ${new Date().getFullYear()} CareerLabs Technologies Pvt Ltd`;
         }
         footerContent();
+
+        // Carousel
         var mediaquery = window.matchMedia("(max-width:767px)")
         console.log(mediaquery)
         mediaquery.addEventListener("change", mediachange)
@@ -616,7 +625,317 @@
             slides[n - 1].style.display = "block";
             dots[n - 1].className += " gmat-5th-active";
         }
+        // contact form space validation
+        function spacevalid(e) {
+            var e = window.event;
+            var getclassname = e.target.className;
+            var as = document.getElementsByClassName(getclassname)[0].value;
+            var key = e.keyCode;
+            if (key == 32) {
+                e.preventDefault();
+            }
+        }
+        // Contact Form
+        function firstnamevalidation(e) {
+            // console.log("kathir");
+            var first = e.target.className;
+            // console.log(first, "first");
+            var first1 = document.getElementsByClassName(first)[0];
+            // console.log("first1", first1.value)
+            var errorfirst = document.querySelector(`.${first}-gmat-1-firstname`);
+            // console.log(errorfirst, "99", first1);
+            var errormsg = document.querySelector(`.${first}-gmat-form-error-msg`);
+            var e = window.event;
+            var key = e.keyCode;
+            if (first1.value.length == 0 && key == 32) {
+                console.log(e.preventDefault());
+                e.preventDefault();
+            }
 
+            if (first1.value.length == "") {
+                errormsg.style.display = "block";
+                errorfirst.innerHTML = "Name is requrieds";
+                return false;
+            }
+            if (first1.value.length < 3 || !first1.value.match(/^[ A-Za-z]+$/)) {
+                errormsg.style.display = "block";
+                errorfirst.innerHTML = "Name is requried";
+                return false;
+            }
+
+            errormsg.style.display = "none";
+            errorfirst.innerHTML = "";
+            return true;
+        }
+
+        //Email validation
+        function emailvalidation(e) {
+            // console.log(e)
+            var getemail1 = event.target.className === "gmat-name" ? "gmat-email" : event.target.className === "gmat-name1" ? "gmat-email1" : event.target.className
+            console.log(getemail1, "email")
+            var getemail = document.getElementsByClassName(getemail1)[0];
+            // console.log(getemail, "email")
+            var erroremail = document.querySelector(`.${getemail1}-gmat-1-email`);
+            var errormsg1 = document.querySelector(`.${getemail1}-gmat-form-error-msg1`);
+            if (getemail.value.length == "") {
+                errormsg1.style.display = "block";
+                erroremail.innerHTML = "Email is requried";
+                return false;
+            }
+            if (
+                !getemail.value.match(
+                    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                )
+            ) {
+                errormsg1.style.display = "block";
+                erroremail.innerHTML = "Enter the valid Email-id";
+                return false;
+            }
+            errormsg1.style.display = "none";
+            erroremail.innerHTML = "";
+            return true;
+        }
+
+        //phone Number Validation
+        function phonevalidation(e) {
+            var getphone1 = event.target.className === "gmat-name" ? "gmat-phone" : event.target.className === "gmat-name1" ? "gmat-phone1" : event.target.className;
+            var getphone = document.getElementsByClassName(getphone1)[0];
+            var errorphon = document.querySelector(`.${getphone1}-gmat-1-phone`);
+            var errormsg2 = document.querySelector(`.${getphone1}-gmat-form-error-msg2`);
+            if (!getphone.value.match("[0-9]{10}")) {
+                // console.log("l")
+                errorphon.innerHTML = "Valid Phone Number";
+                errormsg2.style.display = "block";
+                return false;
+            }
+
+            errormsg2.style.display = "none";
+            errorphon.innerHTML = "";
+            return true;
+        }
+
+        //City validation
+        function cityvalidation(e) {
+            var city1 = event.target.className === "gmat-name" ? "gmat-city" : event.target.className === "gmat-name1" ? "gmat-city1" : e.target.className
+            var city = document.getElementsByClassName(city1)[0];
+            var errorcity = document.querySelector(`.${city1}-gmat-1-city`);
+            var errormsg3 = document.querySelector(`.${city1}-gmat-form-error-msg3`);
+            // console.log(errormsg3)
+            var e = window.event;
+            var key = e.keyCode;
+            if (city.value.length == 0 && key == 32) {
+                e.preventDefault();
+            }
+            if (city.value.length == "") {
+                errormsg3.style.display = "block";
+                errorcity.innerHTML = "Name is requried";
+                return false;
+            }
+            if (city.value.length < 2 || !city.value.match(/^[ A-Za-z]+$/)) {
+                errormsg3.style.display = "block";
+                errorcity.innerHTML = "Name is requried";
+                return;
+            }
+            errormsg3.style.display = "none";
+            errorcity.innerHTML = "";
+            return true;
+        }
+
+        // extra code
+        function getParam(p) {
+            var match = RegExp('[?&]' + p + '=([^&]*)').exec(window.location.search);
+            return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+        }
+        function getExpiryRecord(value) {
+            var expiryPeriod = 90 * 24 * 60 * 60 * 1000; // 90 day expiry in milliseconds
+            var expiryDate = new Date().getTime() + expiryPeriod;
+            return {
+                value: value,
+                expiryDate: expiryDate
+            };
+        }
+
+        function addGclid() {
+            var gclidParam = getParam('gclid');
+            var gclidFormFields = ['gclid_field_1', 'gclid_field_2']; // all possible gclid form field ids here
+            var gclidRecord = null;
+            var currGclidFormField;
+
+            var gclsrcParam = getParam('gclsrc');
+            var isGclsrcValid = !gclsrcParam || gclsrcParam.indexOf('aw') !== -1;
+
+            gclidFormFields.forEach(function (field) {
+                if (document.getElementById(field)) {
+                    currGclidFormField = document.getElementById(field);
+                }
+            });
+
+            if (gclidParam && isGclsrcValid) {
+                gclidRecord = getExpiryRecord(gclidParam);
+                localStorage.setItem('gclid', JSON.stringify(gclidRecord));
+            }
+
+            var gclid = gclidRecord || JSON.parse(localStorage.getItem('gclid'));
+            var isGclidValid = gclid && new Date().getTime() < gclid.expiryDate;
+
+            if (currGclidFormField && isGclidValid) {
+                currGclidFormField.value = gclid.value;
+            }
+        }
+        window.addEventListener('load', addGclid);
+
+        function padTo2Digits(num) {
+            return num.toString().padStart(2, '0');
+        }
+
+        // MM/dd/yyyy HH:mm:ss ->	"08/14/2022 17:01:54"
+        function formatDate(date) {
+            console.log(date);
+            return (
+                [
+                    padTo2Digits(date.getMonth() + 1),
+                    padTo2Digits(date.getDate()),
+                    date.getFullYear(),
+                ].join('/') +
+                ' ' +
+                [
+                    padTo2Digits(date.getHours()),
+                    padTo2Digits(date.getMinutes()),
+                    padTo2Digits(date.getSeconds()),
+                ].join(':')
+            );
+        }
+
+        // form submit functionality
+        function checkvalid(e) {
+            e.preventDefault();
+            console.log("clicked", e);
+            if (
+                !firstnamevalidation(e) ||
+                !emailvalidation(e) ||
+                !phonevalidation(e) ||
+                !cityvalidation(e)
+            ) {
+                document.querySelector(`.${e.target.className}-gmat-btn-error`).style.display = "block";
+                setTimeout(btnerror20, 3000);
+                function btnerror20() {
+                    document.querySelector(`.${e.target.className}-gmat-btn-error`).style.display = "none";
+                }
+                return false;
+            }
+
+            console.log("vel")
+
+            localStorage.setItem("lp-form-submission", "");
+            const urlParams = new URLSearchParams(window.location.search);
+            let utmUrl,
+                redirectFullURL,
+                source,
+                campaign,
+                medium,
+                device,
+                term,
+                name,
+                email,
+                phone,
+                city,
+                yoe,
+                workDesignation,
+                workExperience,
+                gclId,
+                gct;
+
+            utmUrl = window.location.href;
+            source = urlParams.get("utm_source") || urlParams.get("source") || "";
+            campaign =
+                urlParams.get("utm_campaign") || urlParams.get("campaign") || "";
+            medium = urlParams.get("utm_medium") || urlParams.get("medium") || "";
+            term = urlParams.get("utm_term") || urlParams.get("term") || "";
+            device = urlParams.get("utm_device") || urlParams.get("device") || "";
+            gclId = urlParams.get("gclid") || "";
+            gct = formatDate(new Date()) || "";
+
+            if (e.target.id === "gmat-name-btn") {
+                name = document.getElementById("name").value;
+                email = document.getElementById("email").value;
+                phone = document.getElementById("phone").value;
+                city = document.getElementById("city").value;
+                console.log(name, email, phone, city)
+            } else if (e.target.id === "gmat-name1-btn") {
+                name = document.getElementById("name2").value;
+                email = document.getElementById("email2").value;
+                phone = document.getElementById("phone2").value;
+                city = document.getElementById("city2").value;
+            }
+            queryParam = `?${phone ? `phone=${phone}` : ``}${name ? `&firstName=${name}` : ``
+                }${email ? `&email=${email}` : ``}${source ? `&source=${source}` : ``}${campaign ? `&campaign=${campaign}` : ``
+                }${medium ? `&medium=${medium}` : ``}${device ? `&device=${device}` : ``
+                }${term ? `&term=${term}` : ``}${utmUrl ? `&url=${utmUrl}` : ``}`;
+
+            redirectFullURL = `https://gmatprep.thecareerlabs.com/gmat-thank-you${queryParam}`;
+            document.getElementById("redirectUrl").value = redirectFullURL;
+            const payload = {
+                account: "GMAT",
+                firstName: name.split(" ") ? name.split(" ")[0] : name,
+                lastName: name.split(" ") ? name.split(" ")[1] : "",
+                email: email,
+                phone: phone,
+                pageCode: "255",
+                source: source,
+                sourceCode: campaign,
+                website: utmUrl,
+                sourceMedium: medium,
+                device: device,
+                term: term,
+                otpVerified: "No",
+                eventMsg: `${name.split(" ")[0]} registered from ${utmUrl} page`,
+                googleConversionId: gclId,
+                googleConversionTime: gct,
+            };
+            console.log(payload);
+            if (e.target.id === "gmat-name-btn") {
+                document.querySelector("#gmat-name-btn").innerHTML = "Submitting...";
+                document.querySelector("#gmat-name-btn").disabled = true;
+            } else if (e.target.id === "gmat-name1-btn") {
+                document.querySelector("#gmat-name1-btn").innerHTML =
+                    "Submitting...";
+                document.querySelector("#gmat-name1-btn").disabled = true;
+            }
+            fetch("https://careerwizard.thecareerlabs.com/ls/api/v1/registration", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(payload),
+            })
+                .then((response) => {
+                    localStorage.setItem("lp-form-submission", "success");
+                    if (e.target.id === "gmat-name-btn") {
+                        document.getElementById("gmat-name-btn").innerHTML =
+                            "Start Preparing Today!";
+                        document.getElementById("gmat-name-btn").disabled = false;
+                        document.querySelector(".gmat-name-gmat-btn-error").style.display = "block";
+                        document.querySelector(".gmat-name1-gmat-btn-error").style.display.color = "green"
+                        document.querySelector(".gmat-name-gmat-btn-error").innerHTML = "Thank You For Submitting The Form! Soon we will reach out to you.";
+                        var form1 = document.getElementsByName('FORM 0')[0];
+                        form1.reset();
+                        window.open(redirectFullURL, "_self");
+                    } else if (e.target.id === "gmat-name1-btn") {
+                        document.getElementById("gmat-name1-btn").innerHTML =
+                            "Start Preparing Today!";
+                        document.getElementById("gmat-name1-btn").disabled = false;
+                        document.querySelector(".gmat-name1-gmat-btn-error").style.display = "block";
+                        document.querySelector(".gmat-name1-gmat-btn-error").style.display.color = "green"
+                        document.querySelector(".gmat-name1-gmat-btn-error").innerHTML = "Thank You For Submitting The Form! Soon we will reach out to you.";
+                        var form2 = document.getElementsByName('FORM 1')[0]
+                        form2.reset();
+                        window.open(redirectFullURL, "_self");
+                    }
+                })
+                .catch((error) => {
+                    console.error("Error:", error);
+                });
+        }
     </script>
 </body>
 
