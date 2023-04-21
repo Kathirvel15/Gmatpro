@@ -504,6 +504,7 @@ body {
     color: #ffffff;
     background: #18212f;
     border-radius: 38px;
+    cursor: pointer;
 }
 
 /* Carousel */

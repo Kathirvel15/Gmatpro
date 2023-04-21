@@ -67,7 +67,7 @@
                         <form role="form" onsubmit="return false" name="FORM 0">
                             <div class="gmat-form-margin-top">
                                 <input type="text" placeholder="Name:" id="name" class="gmat-name"
-                                    onkeyup="firstnamevalidation(event)">
+                                    onkeydown="firstnamevalidation(event)">
                                 <div class="gmat-form-error-msg gmat-name-gmat-form-error-msg">
                                     <p class="gmat-1-firstname gmat-name-gmat-1-firstname">
                                     </p>
@@ -89,7 +89,7 @@
                             </div>
                             <div class="gmat-form-margin-top">
                                 <input type="text" placeholder="City:" id="city" class="gmat-city"
-                                    onkeyup="cityvalidation(event)">
+                                    onkeydown="cityvalidation(event)">
                                 <div class="gmat-form-error-msg3 gmat-city-gmat-form-error-msg3">
                                     <p class="gmat-1-city gmat-city-gmat-1-city"></p>
                                 </div>
@@ -320,7 +320,7 @@
                 <span class="gmat-4-dot" onclick="slide4th(2,'gmat-slide-4th-mobile-carousel','gmat-4-dot')"></span>
             </div>
             <div class="btn-col">
-                <button>Start Preparing Today!</button>
+                <a href="#contact-form"> <button>Start Preparing Today!</button></a>
             </div>
         </div>
     </div>
@@ -508,7 +508,7 @@
     </div>
     <!--SECTION -6-->
     <div class="gmat-section-6th">
-        <div class="gmat-section-6-head">
+        <div class="gmat-section-6-head" id="contact-form">
             <h1>Take The <b>First Step</b> Towards <b>A Successful Career!</b></h1>
             <p>Fill The Form Below & Discover More About Our GMAT Preparation Methods</p>
         </div>
@@ -518,7 +518,7 @@
                     <div class="gmat-section-6-form-col">
                         <div class="gmat-form-margin-top">
                             <input type="text" placeholder="Name:" id="name2" class="gmat-name1"
-                                onkeyup="firstnamevalidation(event)">
+                                onkeydown="firstnamevalidation(event)">
                             <div class="gmat-formlast-error-msg gmat-name1-gmat-form-error-msg ">
                                 <p class="gmat-1last-firstname gmat-name1-gmat-1-firstname ">
                                 </p>
@@ -542,7 +542,7 @@
                         </div>
                         <div class="gmat-form-margin-top">
                             <input type="text" placeholder="City:" id="city2" class="gmat-city1"
-                                onkeyup="cityvalidation(event)">
+                                onkeydown="cityvalidation(event)">
                             <div class="gmat-formlast-error-msg3 gmat-city1-gmat-form-error-msg3">
                                 <p class="gmat-1last-city gmat-city1-gmat-1-city"></p>
                             </div>
@@ -661,10 +661,10 @@
 
             if (first1.value.length == "") {
                 errormsg.style.display = "block";
-                errorfirst.innerHTML = "Name is requrieds";
+                errorfirst.innerHTML = "Name is requried";
                 return false;
             }
-            if (first1.value.length < 3 || !first1.value.match(/^[ A-Za-z]+$/)) {
+            if (first1.value.length < 2 || !first1.value.match(/^[ A-Za-z]+$/)) {
                 errormsg.style.display = "block";
                 errorfirst.innerHTML = "Name is requried";
                 return false;
