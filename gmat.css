@@ -3,6 +3,7 @@ body {
     font-family: "Poppins";
 }
 
+/* section - 1 */
 .gmat-header {
     width: 1070px;
     margin: auto;
@@ -43,7 +44,7 @@ body {
 
 .gmat-section-1st-col-1 {
     width: 65%;
-    padding-bottom: 1.5em;
+    padding-bottom: 5em;
 }
 
 .gmat-section-1st-col-1 .gmat-section-1st-inner-col-1 {
@@ -51,6 +52,13 @@ body {
     border-radius: 0 20px 20px 0;
     margin-top: 3em;
     height: max-content;
+    position: relative;
+}
+
+.gmat-section-1st-inner-col-1 img {
+    position: absolute;
+    right: -5em;
+    bottom: -4rem;
 }
 
 .gmat-section-1st-inner-col-2 {
@@ -193,6 +201,7 @@ body {
     margin: 10px 0 0;
 }
 
+/* section -2 */
 .gmat-section-2nd {
     margin-top: 4em;
 }
@@ -219,7 +228,9 @@ body {
     margin-top: 2em;
     padding-bottom: 4em;
     justify-content: space-between;
-    background: linear-gradient(180deg, rgba(253, 244, 204, 0) 0%, #fff7d5 129.28%);
+    background: linear-gradient(180deg,
+            rgba(253, 244, 204, 0) 0%,
+            #fff7d5 129.28%);
 }
 
 .gmat-section-2-google {
@@ -288,7 +299,12 @@ body {
 
 .gmat-section-2-inner-split-col-1,
 .gmat-section-2-inner-split-col-2 {
-    box-shadow: 0 37.8106px 130.693px rgba(0, 0, 0, 0.1), 0 15.7964px 54.6005px rgba(0, 0, 0, 0.0718854), 0 8.44549px 29.192px rgba(0, 0, 0, 0.0596107), 0 4.73447px 16.3648px rgba(0, 0, 0, 0.05), 0 2.51444px 8.69123px rgba(0, 0, 0, 0.0403893), 0 1.04632px 3.61662px rgba(0, 0, 0, 0.0281146);
+    box-shadow: 0 37.8106px 130.693px rgba(0, 0, 0, 0.1),
+        0 15.7964px 54.6005px rgba(0, 0, 0, 0.0718854),
+        0 8.44549px 29.192px rgba(0, 0, 0, 0.0596107),
+        0 4.73447px 16.3648px rgba(0, 0, 0, 0.05),
+        0 2.51444px 8.69123px rgba(0, 0, 0, 0.0403893),
+        0 1.04632px 3.61662px rgba(0, 0, 0, 0.0281146);
     border-radius: 10px;
     width: 100%;
     background-color: #ffffff;
@@ -380,6 +396,7 @@ body {
 .gmat-prop-joshi-para {
     color: #f2f2f2;
     margin: 0px;
+    /* font-size: 20px; */
     text-align: justify;
     line-height: 30px;
 }
@@ -400,10 +417,13 @@ body {
     color: #f4c13d;
 }
 
+/* section 3 */
 .gmat-prep-pro-sec-3 {
     margin: 2rem 0rem;
     margin-top: 5rem;
-    background: linear-gradient(180deg, rgba(253, 244, 204, 0) 0%, #fff7d5 129.28%);
+    background: linear-gradient(180deg,
+            rgba(253, 244, 204, 0) 0%,
+            #fff7d5 129.28%);
 }
 
 .gmat-prep-pro-sec-3-cols {
@@ -414,6 +434,9 @@ body {
 }
 
 .gmat-prep-pro-sec-3-cols .sec-3-col {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
     text-align: center;
     padding-top: 2rem;
 }
@@ -422,9 +445,12 @@ body {
     width: 70%;
 }
 
+/* section 4 */
 .gmat-prep-pro-sec-4 {
     padding: 2rem 3rem;
-    background: linear-gradient(180deg, rgba(253, 244, 204, 0) 0%, #fff7d5 129.28%);
+    background: linear-gradient(180deg,
+            rgba(253, 244, 204, 0) 0%,
+            #fff7d5 129.28%);
 }
 
 .gmat-prep-pro-sec-width {
@@ -433,6 +459,8 @@ body {
 }
 
 .gmat-prep-pro-sec-4-cols {
+    /* display: flex;
+    justify-content: space-between; */
     background: linear-gradient(92.39deg, #a9850d -3.48%, #bda860 105.24%);
     border-radius: 25px;
     margin: 4rem 0rem;
@@ -461,6 +489,15 @@ body {
     align-items: center;
 }
 
+/* .gmat-prep-pro-sec-4-cols .student-col img {
+  width: 90%;
+} */
+/* .gmat-prep-pro-sec-4-cols .univercity-col img {
+  width: 80%;
+}
+.gmat-prep-pro-sec-4-cols .medal-col img {
+  width: 80%;
+} */
 .gmat-prep-pro-sec-4-cols .student-col img {
     background-color: #d9d9d9;
     border-radius: 30px;
@@ -499,6 +536,7 @@ body {
     cursor: pointer;
 }
 
+/* Carousel */
 .gmat-2-joshi-dot,
 .gmat-2-dot,
 .gmat-3-dot,
@@ -524,6 +562,7 @@ body {
     background-color: #04094d !important;
 }
 
+/* section - 6 */
 .gmat-section-6th {
     width: 1070px;
     margin: 4em auto;
@@ -614,12 +653,15 @@ body {
     text-align: center;
 }
 
+/* section-2 */
 .gmat-prep-pro-2 {
     margin-top: 4em;
 }
 
 .gmat-prep-pro-2 {
-    background: linear-gradient(180deg, rgba(253, 244, 204, 0) 0%, #fff7d5 129.28%);
+    background: linear-gradient(180deg,
+            rgba(253, 244, 204, 0) 0%,
+            #fff7d5 129.28%);
 }
 
 .gmat-prp-2-para {
@@ -694,6 +736,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 100000px) {
 
+    /* Carousel */
     .gmat-section-2nd-joshi-dot,
     .gmat-section-2nd-dot,
     .gmat-section-3rd-dot,
@@ -715,6 +758,14 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1100px) {
+
+    /* Money back */
+    .gmat-section-1st-inner-col-1 img {
+        width: 100px;
+        right: -3em;
+        bottom: -3rem;
+    }
+
     .gmat-section-1st-head-content h1 {
         font-size: 30px;
     }
@@ -724,7 +775,7 @@ body {
     }
 
     .gmat-section-1st-inner-col-1 ul {
-        padding: 1em 0.5em 1em 2em;
+        padding: 1em 2.5em 1em 2em;
     }
 
     .gmat-section-1st-inner-col-1 ul li {
@@ -759,6 +810,10 @@ body {
     .gmat-form-error-msg3 p {
         right: 1em;
     }
+
+    .gmat-prep-pro-2-width {
+        width: 1070px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -788,6 +843,7 @@ body {
         font-size: 30px !important;
     }
 
+    /* section-6 */
     .gmat-section-6th {
         width: 95%;
         margin-top: 2em;
@@ -806,6 +862,7 @@ body {
         padding: 0.7em;
     }
 
+    /* section -2 */
     .gmat-section-3rd-inner-part {
         gap: 1em;
     }
@@ -826,10 +883,12 @@ body {
         margin-top: 1em !important;
     }
 
+    /* section - 3 */
     .gmat-prep-pro-sec-3-cols {
         padding: 0rem 1rem;
     }
 
+    /* section 4 */
     .gmat-prep-pro-sec-4-cols {
         margin: 2rem 0rem;
         border-radius: 20px;
@@ -882,6 +941,15 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+
+    /* Money back */
+    .gmat-section-1st-inner-col-1 img {
+        position: absolute;
+        right: 0px;
+        bottom: -4.5rem;
+        width: 120px;
+    }
+
     .gmat-section-1st-inner-col-2 img {
         width: 95%;
     }
@@ -943,7 +1011,7 @@ body {
     }
 
     .gmat-section-1st-inner-col-1 ul {
-        padding: 1em 0.5em 1em 2.5em;
+        padding: 1em 0.5em 3em 2.5em;
     }
 
     .gmat-section-1st-inner-col-1 ul li {
@@ -1019,6 +1087,7 @@ body {
         gap: 0.5em;
     }
 
+    /* Carousel */
     .gmat-section-2nd-joshi-dot,
     .gmat-section-2nd-dot,
     .gmat-section-3rd-dot,
@@ -1031,6 +1100,7 @@ body {
         margin-top: -3rem !important;
     }
 
+    /* section-5 */
     .gmat-pro-joshi-inner-part {
         flex-direction: column;
         gap: 1em;
@@ -1061,6 +1131,8 @@ body {
         width: auto;
         margin: 1em 0em 2em;
     }
+
+    /* section -6 */
 
     .gmat-section-6-head p {
         font-size: 12px;
@@ -1095,6 +1167,7 @@ body {
         font-size: 14px !important;
     }
 
+    /* section-2 */
     .part-2-2 {
         margin-top: 0em !important;
     }
@@ -1147,6 +1220,7 @@ body {
         padding: 10px 2em;
     }
 
+    /* section 3 */
     .gmat-prep-pro-sec-3 .gmat-section-6-head h1,
     .gmat-prep-pro-sec-4 .gmat-section-6-head h1 {
         font-size: 17px !important;
@@ -1170,6 +1244,7 @@ body {
         padding-top: 0rem;
     }
 
+    /* section 4 */
     .gmat-prep-sec-4-inner {
         flex-direction: column;
     }
